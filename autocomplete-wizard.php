@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Autocomplete Wizard
-Version: 2.0
-Plugin URI: http://getbutterfly.com/wordpress-plugins/autocomplete-wizard/
+Version: 2.1
+Plugin URI: http://getbutterfly.com/wordpress-plugins-free/
 Description: <strong>Autocomplete Wizard</strong> plugin helps your users find what they are looking for better and faster. No more searching in the dark, no more 404 errors! Autocomplete your content and redirect your users.
 Author: Ciprian Popescu
 Author URI: http://getbutterfly.com/
@@ -23,7 +23,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-define('ACW_VERSION', '2.0');
+define('ACW_VERSION', '2.1');
 
 function acw_scripts() {
 	// purecss.io // 0.6.0 // load as 'pure'
@@ -46,9 +46,8 @@ function acw_plugin_menu() {
 
 function acw_plugin_options() {
 	if(isset($_POST['acw_submit'])) {
-		update_option('acw_search_label', $_POST['acw_search_label']);
-		update_option('acw_select_placeholder', $_POST['acw_select_placeholder']);
-		update_option('acw_highlight_colour', $_POST['acw_highlight_colour']);
+		update_option('acw_search_label', sanitize_text_field($_POST['acw_search_label']));
+		update_option('acw_select_placeholder', sanitize_text_field($_POST['acw_select_placeholder']));
 
 		echo '<div class="updated"><p><strong>Settings saved.</strong></p></div>';
 	}

@@ -3,7 +3,7 @@ Contributors: Ciprian Popescu
 Tags: autocomplete, select, dropdown, search
 Requires at least: 4.0
 Tested up to: 4.1.1
-Stable tag: 2.0
+Stable tag: 2.1
 License: GPLv3
 
 == Description ==
@@ -21,6 +21,12 @@ The shortcode adds a dropdown SELECT field with automatic redirection, based on 
 5. Publish your post or page
 
 == Changelog ==
+
+= 2.1 =
+* UPDATE: Updated WordPress version
+* UPDATE: Updated plugin URL
+* SECURITY: Sanitized options
+* FIX: Removed unused option
 
 = 2.0 =
 * FIX: Fixed custom taxonomy query
