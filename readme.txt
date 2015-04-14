@@ -1,5 +1,5 @@
 === Autocomplete Wizard  ===
-Contributors: Ciprian Popescu
+Contributors: butterflymedia
 Tags: autocomplete, select, dropdown, search
 Requires at least: 4.0
 Tested up to: 4.1.1
