@@ -90,11 +90,14 @@ function acw_plugin_options() {
 						Add the <code>[ac-tags]</code> shortcode to display all tags.<br>
 						Add the <code>[ac-tagged-posts tag="blog"]</code> shortcode to display all posts with a specific tag.
 					</p>
-
-					<h3>Plugin Support</h3>
-					<p>For support, feature requests and bug reporting, please visit the <a href="//getbutterfly.com/wordpress-plugins/autocomplete-wizard/" rel="external">official website</a>.</p>
 				</div>
 			</div>
+            <div class="postbox">
+                <div class="inside">
+                    <p>For support, feature requests and bug reporting, please visit the <a href="//getbutterfly.com/" rel="external">official website</a>.</p>
+                    <p>&copy;<?php echo date('Y'); ?> <a href="//getbutterfly.com/" rel="external"><strong>getButterfly</strong>.com</a> &middot; <a href="//getbutterfly.com/forums/" rel="external">Support forums</a> &middot; <a href="//getbutterfly.com/trac/" rel="external">Trac</a> &middot; <small>Code wrangling since 2005</small></p>
+                </div>
+            </div>
 		</div>
 	</div>
 <?php
